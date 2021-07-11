@@ -10,7 +10,7 @@ RUN tar -xvf apache-tomcat-8.5.69.tar.gz
 RUN mv apache-tomcat-8.5.69 tomcat
 
 WORKDIR /apps/tomcat/webapps/
-COPY /apps/jenkin_slave4/workspace/war_pipeline/target/vivek-app.war /apps/tomcat/webapps/
+COPY apps/jenkin_slave4/workspace/war_pipeline/target/vivek-app.war /apps/tomcat/webapps/
 
 EXPOSE 8080
 
